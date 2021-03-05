@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="eBay Test Suite">
+  <test thread-count="1" parallel="methods" name="MyTest">
+    <classes>
+      <class name="com.ebay.TS_01_01_MainPageTest"/>
+      <class name="com.ebay.TS_02_01_SearchPageTest"/>
+    </classes>
+  </test> <!-- MyTest -->
+</suite> <!-- eBay Test Suite -->

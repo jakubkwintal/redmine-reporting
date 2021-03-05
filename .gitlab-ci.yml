@@ -1,0 +1,195 @@
+image: markhobson/maven-chrome:jdk-11
+
+stages:
+  - build
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  GIT_DEPTH: 0
+
+cache:
+  paths:
+    - .m2/repository/
+    - target/
+
+build:
+  stage: build
+  script:
+    - mvn clean install -Dmaven.test.skip=true
+
+LoginPage:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=LoginPageTest test
+    - echo "LoginPage success!"
+  when: manual
+
+MainPage:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=MainPageTest test
+    - echo "MainPage success!"
+  when: manual
+
+PraweMenu:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=PraweMenuTest test
+    - echo "PraweMenu success!"
+  when: manual
+
+LeftMenu:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=LeftTest test
+    - echo "LeftMenu success!"
+  when: manual
+
+Bilanse:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=BilanseTest test
+    - echo "Bilanse success!"
+  when: manual
+
+Dokumenty:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=DokumentyTest test
+    - echo "Dokumenty success!"
+  when: manual
+
+EkranStartowy:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=EkranStartowyTest test
+    - echo "EkranStartowy success!"
+  when: manual
+
+Inkasenci:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=InkasenciTest test
+    - echo "Inkasenci success!"
+  when: manual
+
+Magazyny:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=MagazynyTest test
+    - echo "Magazyny success!"
+  when: manual
+
+ModułInżynierski:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=ModulInzynierskiTest test
+    - echo "ModułInżynierski success!"
+  when: manual
+
+PrzerwyTrafostacji:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=PrzerwyTrafostacjiTest test
+    - echo "PrzerwyTrafostacji success!"
+  when: manual
+
+Raporty:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=RaportyTest test
+    - echo "Raporty success!"
+  when: manual
+
+Rozliczenia:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=RozliczeniaTest test
+    - echo "Rozliczenia success!"
+  when: manual
+
+StrukturaPomiarowa:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=StrukturaPomiarowaTest test
+    - echo "StrukturaPomiarowa success!"
+  when: manual
+
+UmawianieWizyt:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=UmawianieWizytTest test
+    - echo "MoUmawianieWizyt success!"
+  when: manual
+
+Umowy:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=UmowyTest test
+    - echo "Umowy success!"
+  when: manual
+
+UstawieniaSystemu:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=UstawieniaSystemuTest test
+    - echo "UstawieniaSystemu success!"
+  when: manual
+
+Walidacje:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=WalidacjeTest test
+    - echo "Walidacje success!"
+  when: manual
+
+Workflow:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=WorkflowTest test
+    - echo "Workflow success!"
+  when: manual
+
+Zadania:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=ZadaniaTest test
+    - echo "Zadania success!"
+  when: manual
+
+Inny:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=InnyTest test
+    - echo "Inny success!"
+  when: manual
+
+PingIP:
+  needs: [ build ]
+  stage: test
+  script:
+    - mvn -Dtest=PingIpTest test
+    - echo "PingIp success!"
+  when: manual

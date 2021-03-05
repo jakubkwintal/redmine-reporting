@@ -1,0 +1,12 @@
+.gradle
+/build/
+**/out
+**/build
+
+### IntelliJ IDEA ###
+selenium-redmine/.idea
+*.iws
+*.iml
+*.ipr
+*.class
+/out/

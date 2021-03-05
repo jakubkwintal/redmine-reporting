@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-05T08:31:56 CET" name="eBay Test Suite" finished-at="2021-03-05T08:33:05 CET" duration-ms="69080">
+    <groups>
+    </groups>
+    <test started-at="2021-03-05T08:31:56 CET" name="MyTest" finished-at="2021-03-05T08:33:05 CET" duration-ms="69080">
+      <class name="com.ebay.TS_02_01_SearchPageTest">
+        <test-method is-config="true" signature="startComment()[pri:0, instance:com.ebay.TS_02_01_SearchPageTest@730d2164]" started-at="2021-03-05T08:32:35 CET" name="startComment" finished-at="2021-03-05T08:32:35 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startComment -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ebay.TS_02_01_SearchPageTest@730d2164]" started-at="2021-03-05T08:32:35 CET" name="setup" finished-at="2021-03-05T08:32:42 CET" duration-ms="6996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc01_searchForU2Album()[pri:0, instance:com.ebay.TS_02_01_SearchPageTest@730d2164]" started-at="2021-03-05T08:32:42 CET" name="tc01_searchForU2Album" description="TC0. Search for U2&#039;s &#039;No line on the horizon&#039; album with some details" finished-at="2021-03-05T08:32:58 CET" duration-ms="16072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_searchForU2Album -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.ebay.TS_02_01_SearchPageTest@730d2164]" started-at="2021-03-05T08:32:58 CET" name="endTest" finished-at="2021-03-05T08:32:58 CET" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tsStatusInRedmine()[pri:0, instance:com.ebay.TS_02_01_SearchPageTest@730d2164]" started-at="2021-03-05T08:32:58 CET" name="tsStatusInRedmine" finished-at="2021-03-05T08:33:05 CET" duration-ms="6681" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: URL constructor:  is not a valid URL.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '10.252.71.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210222142601, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 50628, moz:profile: C:\Users\jkwintal\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 33bdddf8-d3fe-4dd2-ac70-481fd86ffb57]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: URL constructor:  is not a valid URL.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '10.252.71.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210222142601, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 50628, moz:profile: C:\Users\jkwintal\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 33bdddf8-d3fe-4dd2-ac70-481fd86ffb57
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.TestUtils.Redmine.goToIssue(Redmine.java:29)
+at com.TestUtils.Redmine.testScenarioStatus(Redmine.java:68)
+at com.TestUtils.Base.tsStatusInRedmine(Base.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tsStatusInRedmine -->
+      </class> <!-- com.ebay.TS_02_01_SearchPageTest -->
+      <class name="com.ebay.TS_01_01_MainPageTest">
+        <test-method is-config="true" signature="startComment()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:31:56 CET" name="startComment" finished-at="2021-03-05T08:31:56 CET" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startComment -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:31:56 CET" name="setup" finished-at="2021-03-05T08:32:06 CET" duration-ms="10475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc01_checkAllItemsOnMainPage()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:06 CET" name="tc01_checkAllItemsOnMainPage" description="TC0. Check all the mandatory items on the main page" finished-at="2021-03-05T08:32:13 CET" duration-ms="7202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_checkAllItemsOnMainPage -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:13 CET" name="endTest" finished-at="2021-03-05T08:32:14 CET" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:14 CET" name="setup" finished-at="2021-03-05T08:32:21 CET" duration-ms="6933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc02_searchForDepecheModeItems()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:21 CET" name="tc02_searchForDepecheModeItems" description="TC1. Search for Depeche Mode in music category" finished-at="2021-03-05T08:32:26 CET" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_searchForDepecheModeItems -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:26 CET" name="endTest" finished-at="2021-03-05T08:32:27 CET" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="tsStatusInRedmine()[pri:0, instance:com.ebay.TS_01_01_MainPageTest@20bd8be5]" started-at="2021-03-05T08:32:27 CET" name="tsStatusInRedmine" finished-at="2021-03-05T08:32:35 CET" duration-ms="8047" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: URL constructor:  is not a valid URL.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '10.252.71.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210222142601, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 43092, moz:profile: C:\Users\jkwintal\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 70ebe759-e449-40c3-86e8-3771072778e1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: URL constructor:  is not a valid URL.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CQ6GRJ2', ip: '10.252.71.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 86.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210222142601, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 43092, moz:profile: C:\Users\jkwintal\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 70ebe759-e449-40c3-86e8-3771072778e1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.TestUtils.Redmine.goToIssue(Redmine.java:29)
+at com.TestUtils.Redmine.testScenarioStatus(Redmine.java:68)
+at com.TestUtils.Base.tsStatusInRedmine(Base.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tsStatusInRedmine -->
+      </class> <!-- com.ebay.TS_01_01_MainPageTest -->
+    </test> <!-- MyTest -->
+  </suite> <!-- eBay Test Suite -->
+</testng-results>
